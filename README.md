@@ -1,14 +1,16 @@
 # simple-git-server-docker
 A simple SSH Git server for Docker.
 
-#### To build:
+#### To build locally and run:
 ```
 docker build -t simple-git-server .
+docker run -d -p 2022:22 --name simple-git-server simple-git-server
 ```
 
-#### To run:
+#### To pull from Docker Hub and run:
 ```
-docker run -d -d 2022:22 --name simple-git-server simple-git-server
+docker pull peadejay/simple-git-server-docker
+docker run -d -p 2022:22 --name simple-git-server peadejay/simple-git-server-docker
 ```
 
 #### Once running, to login:
