@@ -1,0 +1,9 @@
+
+Welcome to simple-git-server.
+
+Don't forget to change the default password
+    $ passwd
+
+To create a remote repository
+    $ mkrepo repo-name
+
